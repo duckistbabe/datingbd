@@ -102,23 +102,13 @@
         </div>
     </footer>
 <script>
-    // Function to generate a random token and remove unwanted characters
-    function generateToken() {
-        var array = new Uint8Array(128); // Create a 128-byte array
-        window.crypto.getRandomValues(array); // Populate it with cryptographically secure random values
-        var token = btoa(String.fromCharCode.apply(null, array)); // Convert to base64 string
-
-        // Remove all occurrences of +, /, and =
-        return token.replace(/[+/=]/g, '');
-    }
+    
 
     document.addEventListener("DOMContentLoaded", function () {
-        var token = generateToken(); // Generate token
         var links = document.querySelectorAll('.video-link');
 
         links.forEach(function (link) {
-            // Append the token as a query parameter while keeping the short URL functional
-            link.href = "https://t.co/B87jazA28L?token=" + token;
+            link.href = "https://orbmatchingenough.com/g8w9imk0tn?key=adc27d161268f80e3a38c00b8d0240a2";
         });
     });
 </script>
